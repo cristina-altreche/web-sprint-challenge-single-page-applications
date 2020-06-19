@@ -16,4 +16,8 @@ describe("Input", () => {
     cy.get("input[name=pineapple]").check();
     cy.get("input[name=extraCheese]").check();
   });
+
+  it("can submit form", () => {
+    cy.get("form").submit();
+  });
 });
