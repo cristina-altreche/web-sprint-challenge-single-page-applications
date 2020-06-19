@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import "./App.css";
 import { Route, Link } from "react-router-dom";
 import Home from "./components/Home.js";
 import Form from "./components/Form.js";
@@ -35,7 +36,6 @@ const App = () => {
       .post("https://reqres.in/api/users", newOrder)
       .then((res) => {
         setOrders([...orders, res.data]);
-      
       })
       .catch((err) => {
         console.log(err);
@@ -91,16 +91,19 @@ const App = () => {
       instructions: formValues.instructions,
     };
     postNewOrder(newOrder);
-   
   };
 
   return (
     <div className="App">
       <nav>
         <h1 className="store-header">Lambda Eats</h1>
-        <div className="nav-links">
-          <Link to="/">Home</Link>
-          <Link to="/Form">Form</Link>
+        <div>
+          <Link className="nav-links" to="/">
+            Home
+          </Link>
+          <Link className="nav-links" to="/Form">
+            Form
+          </Link>
         </div>
       </nav>
       <Route exact path="/">

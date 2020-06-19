@@ -6,10 +6,7 @@ export default function Home() {
 
   return (
     <div className="home-wrapper">
-      <img
-        className="home-image"
-        src="https://www.uncommongoods.com/images/category/fun-fullwidth.jpg" alt=""
-      ></img>
+      <img className="home-image" src="https://wallpaperaccess.com/full/866645.jpg" alt=""  width="100%" height="100%" ></img>
       <Link to="./Form">
         <button className="shop-btn" onClick={() => history.push("/Form")}>
           Order Now!

@@ -7,7 +7,7 @@ export default function Form(props) {
     <div className="form-wrapper">
       <form className="form-container" onSubmit={onSubmit}>
         <div className="inputs">
-          <h3>User Info</h3>
+          <h3>Place Order</h3>
           <label htmlFor="name">
             Name&nbsp;
             <input
