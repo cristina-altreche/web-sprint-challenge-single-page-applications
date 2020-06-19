@@ -4,7 +4,9 @@ export default function Form(props) {
   const { values, onSubmit, onInputChange, onCheckboxChange, errors } = props;
 
   return (
+    
     <div className="form-wrapper">
+        <img className="form-image" src="https://twocousinspizza.com/wp-content/uploads/2015/03/FreeGreatPicture.com-14713-hd-pizza-gourmet.jpg" alt=""  ></img>
       <form className="form-container" onSubmit={onSubmit}>
         <div className="inputs">
           <h3>Place Order</h3>
@@ -17,7 +19,8 @@ export default function Form(props) {
               onChange={onInputChange}
             />
           </label>
-          <label htmlFor="size">
+          <div className="row">
+          <label  htmlFor="size">
             <select onChange={onInputChange} value={values.size} name="size">
               <option value="">--Select Pizza Size--</option>
               <option value="8inch">8 inch</option>
@@ -25,7 +28,8 @@ export default function Form(props) {
               <option value="16inch">16 inch</option>
             </select>
           </label>
-          <label htmlFor="toppings">
+          <div className="row-col">
+          <label  htmlFor="toppings">
             Pepperoni
             <input
               name="pepperoni"
@@ -62,8 +66,8 @@ export default function Form(props) {
               onChange={onCheckboxChange}
               checked={values.toppings.extraCheese}
             />
-          </label>
-
+          </label></div>
+</div>
           <label htmlFor="instructions">
             Any special requests?
             <textarea name="instructions" value={values.instructions} onChange={onInputChange} />
