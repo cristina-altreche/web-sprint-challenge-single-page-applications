@@ -8,7 +8,7 @@ export default function Home() {
     <div className="home-wrapper">
       <img
         className="home-image"
-        src="https://www.uncommongoods.com/images/category/fun-fullwidth.jpg"
+        src="https://www.uncommongoods.com/images/category/fun-fullwidth.jpg" alt=""
       ></img>
       <Link to="./Form">
         <button className="shop-btn" onClick={() => history.push("/Form")}>
