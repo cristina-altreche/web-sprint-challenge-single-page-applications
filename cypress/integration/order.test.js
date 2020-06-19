@@ -9,4 +9,11 @@ describe("Input", () => {
       .type("I can type here")
       .should("have.value", "I can type here");
   });
+
+  it("can get and select multiple checkboxs", () => {
+    cy.get("input[name=pepperoni]").check();
+    cy.get("input[name=sausage]").check();
+    cy.get("input[name=pineapple]").check();
+    cy.get("input[name=extraCheese]").check();
+  });
 });
