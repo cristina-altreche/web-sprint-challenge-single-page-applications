@@ -1,11 +1,12 @@
-import React, { useState } from 'react'
+import React, { useContext } from 'react'
 import { Link } from "react-router-dom";
+import OrderContext from '../contexts/OrderContext'
 
 
 const SmartOrder = () => {
-
-    const [order, setOrder] = useState('')
-    console.log(order)
+   
+const {smartOrder, deliveryType } = useContext(OrderContext)
+console.log(smartOrder)
 
     return (
         <div style={{height: "100px"}}>
@@ -18,11 +19,11 @@ const SmartOrder = () => {
                 </div>
                 <div className="smart-order-ctas">
                     <div className="smart-order-container">
-                        <Link to="/Form" onClick={() => setOrder('delivery')} className="btn smart-order-cta">Delivery</Link>
+                        <Link onClick={() => deliveryType("delivery") } className="btn smart-order-cta">Delivery</Link>
                     </div>
                     <span className="smart-order-or">or</span>
                     <div className="smart-order-container">
-                        <Link to="/Form" onClick={() => setOrder('carryout')} className="btn smart-order-cta">Carryout</Link>
+                        <Link onClick={() => deliveryType("carryout") } className="btn smart-order-cta">Carryout</Link>
                     </div>
                </div>
             </div>
