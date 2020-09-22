@@ -6,6 +6,7 @@ import Form from "./components/Form.js";
 import axios from "axios";
 import * as Yup from "yup";
 import formSchema from "./validation/formSchema";
+import Navbar from "./components/Navbar";
 
 //Initial Values
 const initialFormValues = {
@@ -95,7 +96,8 @@ const App = () => {
 
   return (
     <div className="App">
-      <nav>
+      <Navbar />
+      {/* <nav>
         <h1 className="store-header">Lambda Eats</h1>
         <div>
           <Link className="nav-links" to="/">
@@ -105,7 +107,7 @@ const App = () => {
             Form
           </Link>
         </div>
-      </nav>
+      </nav> */}
       <Route exact path="/">
         <Home />
       </Route>

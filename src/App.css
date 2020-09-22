@@ -1,44 +1,5 @@
-.App {
-  text-align: center;
- overflow: hidden;
-}
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
-}
-
-nav {
+/* nav {
   width: 100%;
   background: red;
   color: white;
@@ -55,7 +16,103 @@ nav {
   padding: 8px;
   font-size: 22px;
   margin-right: 20px;
+} */
+
+.contactless-section {
+  text-align: center;
+  padding-top: 2rem;
+  padding-bottom: .2;
+  color:#0078ae;
+  font-weight: bold;
 }
+
+.smart-order{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-content: flex-start;
+  align-items: center;
+  margin: 0 auto 1.875rem;
+  padding: 0 .625rem;
+}
+
+.smart-order-heading {
+  width: 17.5rem;
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  flex-shrink: 1;
+  height: inherit;
+  margin-top: .5rem;
+}
+
+.smart-order-text {
+  color:#006491 ;
+  font-size: 1.50rem;
+  margin-right: .625rem;
+  word-break: break-word;
+  align-self: center;
+  text-align: center;
+  padding: 0 .25em;
+  text-transform: uppercase;
+}
+
+.smart-buttons {
+  display: flex;
+  justify-content: space-evenly;
+  flex-direction: row;
+}
+
+.smart-order-ctas{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-shrink: 0;
+}
+
+.smart-order-container {
+  display: inline-block;
+  align-self: flex-start;
+  position: relative;
+}
+.smart-order-cta {
+  width: 11.25rem;
+  padding-bottom: .875rem;
+  padding-top: .875rem;
+}
+
+.btn {
+  display: inline-flex;
+  text-align: center;
+  justify-content: center;
+  align-items: stretch;
+  box-sizing: border-box;
+  line-height: 1;
+  font-size: 1.125rem;
+  letter-spacing: .027em;
+  text-transform: uppercase;
+  background-color: #e31837;
+  color: white;
+  font-weight: bold;
+  border: 0;
+  border-radius: .1875rem;
+  padding: .55556em .55556em .5em;
+  cursor: pointer;
+  transition: box-shadow .3s linear;
+  -webkit-font-smoothing: antialiased;
+}
+
+.smart-order-or {
+  color: #888;
+  font-size: 1.375rem;
+  padding: 0 .75rem;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  align-self: center;
+  letter-spacing: .05rem;
+  font-weight: bold;
+}
+
 
 .store-header {
   font-size: 30px;
@@ -67,7 +124,7 @@ nav {
 }
 
 .home-image {
-  position: relative;
+ margin-top: 100px;
 }
 
 .shop-btn {
@@ -84,7 +141,6 @@ nav {
   letter-spacing: 2px;
   outline: none;
   background-color: #f10000;
-  
   color: #fff;
   cursor: pointer;
   box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
@@ -139,7 +195,6 @@ label{
   letter-spacing: 2px;
   outline: none;
   background-color: green;
-
   color: #fff;
   cursor: pointer;
   box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);

@@ -1,4 +1,5 @@
 import React from "react";
+import SmartOrderSelected from './SmartOrderSelected'
 
 export default function Form(props) {
   const { values, onSubmit, onInputChange, onCheckboxChange, errors } = props;
@@ -6,6 +7,7 @@ export default function Form(props) {
   return (
     
     <div className="form-wrapper">
+      <SmartOrderSelected/>
         <img className="form-image" src="https://twocousinspizza.com/wp-content/uploads/2015/03/FreeGreatPicture.com-14713-hd-pizza-gourmet.jpg" alt=""  ></img>
       <form className="form-container" onSubmit={onSubmit}>
         <div className="inputs">
